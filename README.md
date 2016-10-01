@@ -8,27 +8,27 @@ YA QUE LA EXPLICACIÓN ESCRITA PUEDE NO SER SUFICIENTE PARA CUMPLIR LOS OBJETIVO
 PROCESSING BÁSICO: VARIABLES, FUNCIONES Y BOTONES.
 
 
-2. Qué se va a hacer?:
+1 Qué se va a hacer?:
 
-Un programa de dibujo con el mouse, funcion de dibujo con
+Un programa de dibujo con el mouse, diferentes formas, colores y borrador.
 
 
-3. Nivel (introductorio, básico, intermedio, avanzado).
+2 Nivel:
 
 Introductorio - Intermedio.
 
 
-4. Tiempo de ejecución: (un hora, dos horas, un día, etc).
+3 Tiempo de ejecución:
 
 Una hora.
 
 
-5. Recursos necesarios: (lista de recursos, software y hardware).
+4 Recursos necesarios:
 
 Descargar processing 3 únicamente :)
 
 
-6. Pasos a seguir- tabla de contenido: (esto es muy importante porque es como el índice del tutorial).
+5 Pasos a seguir / Tabla de contenido:
 
 1 - Declarar las variables necesarias para su posterior uso.
 
@@ -41,7 +41,7 @@ Descargar processing 3 únicamente :)
 5 - Programar las acciones de dichos botones, tomar las coordenadas y el click del mouse como input.
 
 
-7. Objetivo: Explicar qué se va a aprender.
+6 Objetivos:
 
 Vamos a aprender a:
 
@@ -56,7 +56,7 @@ Usar diferentes funciones para nuestras necesidades, principalmente la funcion i
 Programar botones con las coordinadas y el click del mouse.
 
 
-8. Explicación paso a paso sobre el código.
+7 Explicación paso a paso sobre el código.
 
 ```javascript
 // Software de dibujo
