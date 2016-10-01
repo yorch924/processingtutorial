@@ -58,7 +58,7 @@ Programar botones con las coordinadas y el click del mouse.
 
 8. Explicación paso a paso sobre el código.
 
-
+```javascript
 // Software de dibujo
 
 
@@ -329,6 +329,6 @@ void draw() { // función que se repite indefinidamente una y otra vez.
   
 }
 
+```
 
-
-
+Y eso es todo :)
