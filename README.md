@@ -1,5 +1,8 @@
 # processingtutorial
 
+RECOMENDACIÓN! VER EL VIDEO TURORIAL EN EL SIGUIENTE LINK:
+YA QUE LA EXPLICACIÓN ESCRITA PUEDE NO SER SUFICIENTE PARA CUMPLIR LOS OBJETIVOS DEL TUTORIAL.
+
 PROCESSING BÁSICO: VARIABLES, FUNCIONES Y BOTONES.
 
 2. Qué se va a hacer?:
@@ -53,7 +56,7 @@ void setup() { // función que sucede 1 vez.
 
 // PASO 3: DENTRO DEL SETUP().
   background(255); // función para el color del fondo. RGB. Si se escribe 1 solo valor, processing toma ese valor para cada canal r,g,b.
-  size(500,500); // 
+  size(500,500); // función para determinar el tamaño en pixeles de nuestro programa.
 }
 
 void draw() { // función que se repite indefinidamente una y otra vez.
@@ -61,21 +64,21 @@ void draw() { // función que se repite indefinidamente una y otra vez.
 // PASO 4: DIBUJAR INTERFAZ/BOTONES.
 
   // barra superior contenedora de los botones
-  noStroke();
-  fill(110);
-  rect(0,0,500,35);
+  noStroke(); // función para quitar el trazado a las formas.
+  fill(110); // función para determinar el color del relleno para formas. rgb.
+  rect(0,0,500,35); // función para dibujar un rectángulo. (posicion en x, posicion en y, tamaño en x, tamaño en y).
   
   // boton elipse
   fill(255);
   rect(100,5,25,25);
-  stroke(1);
-  ellipse(112,17,10,10);
+  stroke(1); // función para determinar el trazado para las formas en pixeles.
+  ellipse(112,17,10,10); // fucnión para dibujar una ellipse. (posicion en x, posicion en y, tamaño en x, tamaño en y).
   noStroke();
   
   // boton linea
   rect(130,5,25,25);
   stroke(1);
-  line(135,17,150,17);
+  line(135,17,150,17); // función para dibujar una línea. (coordenada x1, coordenada y1, coordenada x2, coordenada y2).
   noStroke();
   
   // boton color 1
@@ -104,7 +107,9 @@ void draw() { // función que se repite indefinidamente una y otra vez.
   
   // accion dibujo
   
-  if(mousePressed) {
+  if(mousePressed) { // función para preguntar si una condición () es verdadera; si lo es se realiza el código entre {}, sino se salta.
+  // en este caso la funcion grande if esta preguntando si el mouse esta siendo presionado o no.
+  // luego, si en efecto el mouse está siendo presionado, se pregunta que valor tiene la variable color1; si 1, 2 o 3, valores correspondientes a nuestras 3 opciones de color.
     if(color1 == 1) {
       fill(0);
       stroke(0);
@@ -117,8 +122,9 @@ void draw() { // función que se repite indefinidamente una y otra vez.
       fill(170,10,150);
       stroke(170,10,150);
     }
+    // luego de esos tres if(), ya se seleccionó un color fill(), ahora se pregunta si la variable linea es verdadera o falsa, para dibujar una linea o una elipse respectivamente, del color anteriormente seleccionado.
     if(linea == false) {
-      ellipse(mouseX,mouseY,grosor,grosor);
+      ellipse(mouseX,mouseY,grosor,grosor); //la ellipse se dibujará en las coordenadas del mouse, y como esta función está dentro del draw(), se repetirá indefinidamente mientras tengamos el mouse presionado.
     }
     if(linea == true) {
       line(mouseX+grosor,mouseY+grosor,mouseX-grosor,mouseY-grosor);
